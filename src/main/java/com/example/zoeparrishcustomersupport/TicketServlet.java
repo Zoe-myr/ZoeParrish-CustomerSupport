@@ -19,7 +19,7 @@ import java.util.HashMap;
 @MultipartConfig(fileSizeThreshold = 5_242_880,maxFileSize = 20_971_520L,maxRequestSize = 41_943_040L)
 public class TicketServlet extends HttpServlet {
 
-    private volatile int ticketId = 0;
+    private volatile int ticketId = 1;
     private HashMap<Integer,Ticket> ticketDB = new HashMap<>();
 
     @Override
@@ -64,9 +64,9 @@ public class TicketServlet extends HttpServlet {
 
     private void createTicket(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Ticket ticket = new Ticket();
-        ticket.setCustomerName("name");
-        ticket.setSubject("subject");
-        ticket.setBody("body");
+        ticket.setCustomerName(request.getParameter("name"));
+        ticket.setSubject(request.getParameter("subject"));
+        ticket.setBody(request.getParameter("body"));
 
         Part file = request.getPart("file1");
         if (file != null){
@@ -78,8 +78,9 @@ public class TicketServlet extends HttpServlet {
 
         int id;
         synchronized (this){
-            id =this.ticketId++;
+            id =this.ticketId;
             ticketDB.put(id,ticket);
+            ticketId++;
             }
         response.sendRedirect("ticket?action=view&ticketId=" + id);
         }
@@ -157,7 +158,7 @@ public class TicketServlet extends HttpServlet {
             for (int id : ticketDB.keySet()){
                 Ticket ticket = ticketDB.get(id);
                 out.println("Ticket #"+ id);
-                out.println(": <a href =\"ticket?action=view&ticketId="+id+"\"");
+                out.println(": <a href =\"ticket?action=view&ticketId="+id+"\">");
                 out.println(ticket.getSubject()+"</a><br>");
             }
         }

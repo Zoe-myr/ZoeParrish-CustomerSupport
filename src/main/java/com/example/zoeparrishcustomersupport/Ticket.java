@@ -8,7 +8,7 @@ public class Ticket {
     private String customerName;
     private String subject;
     private String body;
-    private HashMap<Integer,Attachment> attachments;
+    private HashMap<Integer,Attachment> attachments = new HashMap<>();
 
     public Ticket(String customerName, String subject, String body, HashMap<Integer,Attachment> attachments){
         this.customerName = customerName;
