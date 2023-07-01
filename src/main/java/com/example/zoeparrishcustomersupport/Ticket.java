@@ -50,10 +50,13 @@ public class Ticket {
     }
 
     //adds an attachment
-    void addAttachment(Attachment a){
-        attachments.put(attachments.size(),a);
+    void addAttachment(Attachment a) {
+        if (this.attachments == null) {
+            attachments.put(0, a);
+        } else {
+            attachments.put(attachments.size(), a);
+        }
     }
-
     //gets an attachment specified by the id
     Attachment getAttachment(int x){
         return attachments.get(x);
