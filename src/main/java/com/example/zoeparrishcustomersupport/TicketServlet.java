@@ -1,6 +1,7 @@
 package com.example.zoeparrishcustomersupport;
 
 import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -144,7 +145,35 @@ public class TicketServlet extends HttpServlet {
         }
     }
 
-    private void downloadAttachment(HttpServletRequest request, HttpServletResponse response) {
+    private void downloadAttachment(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String idString = request.getParameter("ticketId");
+        if(idString ==null|| idString.length()==0){
+            response.sendRedirect("ticket");
+        }
+
+        try{
+            int id = Integer.parseInt(idString);
+            Ticket ticket = ticketDB.get(id);
+
+            String name = request.getParameter("attachment");
+            if(name==null){
+                response.sendRedirect("ticket?action=view&ticketId="+idString);
+            }
+            Attachment attachment = ticket.getAttachment(0);
+            if (attachment == null) {
+                response.sendRedirect("ticket?action=view&ticketId="+idString);
+                return;
+            }
+
+            response.setHeader("Content-Disposition","attachment; filename="+attachment.getName());
+            response.setContentType("application/octet-stream");
+            ServletOutputStream out = response.getOutputStream();
+            out.write(attachment.getContents());
+
+
+        }catch (Exception e){
+            response.sendRedirect("ticket");
+        }
     }
 
     private void listTickets(HttpServletRequest request, HttpServletResponse response) throws IOException {
