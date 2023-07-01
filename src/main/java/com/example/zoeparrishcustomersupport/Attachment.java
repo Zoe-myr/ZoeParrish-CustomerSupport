@@ -1,8 +1,8 @@
 package com.example.zoeparrishcustomersupport;
 
 public class Attachment {
-    String name;
-    byte[] contents;
+    private String name;
+    private byte[] contents;
 
     String getName(){
         return name;
@@ -11,7 +11,7 @@ public class Attachment {
         return contents;
     }
     void setName(String n){
-        name = name;
+        name = n;
     }
     void setContents(byte[] c){
         contents = c;

@@ -4,11 +4,19 @@ import java.util.Collection;
 import java.util.HashMap;
 
 public class Ticket {
-    //instance vars
-    String customerName;
-    String subject;
-    String body;
-    HashMap<Integer,Attachment> attachments;
+    //fields
+    private String customerName;
+    private String subject;
+    private String body;
+    private HashMap<Integer,Attachment> attachments;
+
+    public Ticket(String customerName, String subject, String body, HashMap<Integer,Attachment> attachments){
+        this.customerName = customerName;
+        this.subject = subject;
+        this.body = body;
+        this.attachments = attachments;
+    }
+    public Ticket(){}
 
     //basic get/set
     void setCustomerName(String n){
@@ -51,7 +59,7 @@ public class Ticket {
         return attachments.get(x);
     }
 
-    //get all attachments in a collection6
+    //get all attachments in a collection
     Collection<Attachment> getAllAttachments(){
         return attachments.values();
     }

@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ZoeParrish-CustomerSupport:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3744a4d1-6898-4ab1-870a-ce09449b8327" name="Changes" comment="added Attachment.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/zoeparrishcustomersupport/Ticket.java" afterDir="false" />
+    <list default="true" id="3744a4d1-6898-4ab1-870a-ce09449b8327" name="Changes" comment="added Ticket.java">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/zoeparrishcustomersupport/AttachmentTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/zoeparrishcustomersupport/TicketTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/zoeparrishcustomersupport/Attachment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/zoeparrishcustomersupport/Attachment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/zoeparrishcustomersupport/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/zoeparrishcustomersupport/Ticket.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,11 +25,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="2RwtDLG5KdJtHGMa93HsuRnF46l" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,21 +47,115 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/vboxuser/IdeaProjects/ZoeParrish-Assignment3",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "inlay.hints",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.zoeparrishcustomersupport" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TicketTest">
+    <configuration name="TicketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZoeParrish-CustomerSupport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.zoeparrishcustomersupport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.zoeparrishcustomersupport" />
+      <option name="MAIN_CLASS_NAME" value="com.example.zoeparrishcustomersupport.TicketTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.testGetAttachments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZoeParrish-CustomerSupport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.zoeparrishcustomersupport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.zoeparrishcustomersupport" />
+      <option name="MAIN_CLASS_NAME" value="com.example.zoeparrishcustomersupport.TicketTest" />
+      <option name="METHOD_NAME" value="testGetAttachments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.testGetCustomerName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZoeParrish-CustomerSupport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.zoeparrishcustomersupport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.zoeparrishcustomersupport" />
+      <option name="MAIN_CLASS_NAME" value="com.example.zoeparrishcustomersupport.TicketTest" />
+      <option name="METHOD_NAME" value="testGetCustomerName" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.testSetAttachments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZoeParrish-CustomerSupport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.zoeparrishcustomersupport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.zoeparrishcustomersupport" />
+      <option name="MAIN_CLASS_NAME" value="com.example.zoeparrishcustomersupport.TicketTest" />
+      <option name="METHOD_NAME" value="testSetAttachments" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TicketTest.testSetBody" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZoeParrish-CustomerSupport" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.zoeparrishcustomersupport.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.zoeparrishcustomersupport" />
+      <option name="MAIN_CLASS_NAME" value="com.example.zoeparrishcustomersupport.TicketTest" />
+      <option name="METHOD_NAME" value="testSetBody" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 10.1.9" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.9" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="ZoeParrish-CustomerSupport:war exploded">
@@ -54,12 +164,29 @@
           </settings>
         </artifact>
       </deployment>
-      <server-settings />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="ff11d53c-3e0e-44e0-bf34-92444f4c4fcd" />
+      </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
@@ -67,6 +194,15 @@
         </option>
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TicketTest" />
+        <item itemvalue="JUnit.TicketTest.testSetAttachments" />
+        <item itemvalue="JUnit.TicketTest.testGetAttachments" />
+        <item itemvalue="JUnit.TicketTest.testSetBody" />
+        <item itemvalue="JUnit.TicketTest.testGetCustomerName" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -76,7 +212,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1688172855615</updated>
-      <workItem from="1688172856633" duration="3337000" />
+      <workItem from="1688172856633" duration="8720000" />
     </task>
     <task id="LOCAL-00001" summary="added Attachment.java">
       <option name="closed" value="true" />
@@ -86,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1688173501039</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added Ticket.java">
+      <option name="closed" value="true" />
+      <created>1688176915233</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1688176915233</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +238,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added Attachment.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Attachment.java" />
+    <MESSAGE value="added Ticket.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Ticket.java" />
   </component>
 </project>
