@@ -31,7 +31,7 @@ public class TicketServlet extends HttpServlet {
         }
         switch (action){
             case "create":
-                this.showTicketForm(response);
+                this.showTicketForm(response, request);
                 break;
             case "view":
                 this.viewTicket(request,response);
@@ -102,9 +102,11 @@ public class TicketServlet extends HttpServlet {
         return attachment;
     }
 
-    private void showTicketForm(HttpServletResponse response) throws IOException {
-    PrintWriter out = response.getWriter();
+    private void showTicketForm(HttpServletResponse response, HttpServletRequest request) throws IOException, ServletException {
+       request.getRequestDispatcher("/WEB-INF/jsp/view/ticketForm.jsp").forward(request,response);
 
+    /*
+    PrintWriter out = response.getWriter();
     out.println("<html><body><h2>Create a ticket</h2>");
     out.println("<form action=\"ticket\" method=\"post\" enctype=\"multipart/form-data\">");
     out.println("<input type=\"hidden\" name=\"action\" value=\"create\">");
@@ -114,7 +116,7 @@ public class TicketServlet extends HttpServlet {
     out.println("<input type=\"file\" name=\"file1\"><br>");
     out.println("<input type=\"submit\">");
     out.println("</form></body></html>");
-
+    */
     }
 
     private void viewTicket(HttpServletRequest request, HttpServletResponse response) throws IOException {

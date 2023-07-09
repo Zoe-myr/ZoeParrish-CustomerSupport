@@ -9,8 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3744a4d1-6898-4ab1-870a-ce09449b8327" name="Changes" comment="servlet is built and working">
+    <list default="true" id="3744a4d1-6898-4ab1-870a-ce09449b8327" name="Changes" comment="added web.xml">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ZoeParrish_CustomerSupport_war_exploded2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/jsp/view/base.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/jsp/view/listTickets.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/jsp/view/ticketForm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/jsp/view/viewTicket.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/zoeparrishcustomersupport/TicketServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/zoeparrishcustomersupport/TicketServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/web/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +79,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;inlay.hints&quot;,
@@ -80,6 +89,9 @@
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\vboxuser\IdeaProjects\ZoeParrish-CustomerSupport\src\main" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.example.zoeparrishcustomersupport" />
@@ -225,7 +237,8 @@
       <workItem from="1688245598608" duration="865000" />
       <workItem from="1688936796499" duration="762000" />
       <workItem from="1688937703503" duration="236000" />
-      <workItem from="1688938051940" duration="147000" />
+      <workItem from="1688938051940" duration="5166000" />
+      <workItem from="1688943331637" duration="142000" />
     </task>
     <task id="LOCAL-00001" summary="added Attachment.java">
       <option name="closed" value="true" />
@@ -275,7 +288,23 @@
       <option name="project" value="LOCAL" />
       <updated>1688196131737</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added web.xml">
+      <option name="closed" value="true" />
+      <created>1688938275582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1688938275582</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added web.xml">
+      <option name="closed" value="true" />
+      <created>1688938281534</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688938281534</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +316,7 @@
     <MESSAGE value="test have passed and minor bug fixes" />
     <MESSAGE value="servlet is mostly built just dealing with a few bugs" />
     <MESSAGE value="servlet is built and working" />
-    <option name="LAST_COMMIT_MESSAGE" value="servlet is built and working" />
+    <MESSAGE value="added web.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="added web.xml" />
   </component>
 </project>
